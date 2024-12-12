@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITW 2024/25 - Paris 2024</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="Images/icon.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary border-bottom">
+        <div class="container-lg">
+            <a class="navbar-brand" href="index.html" title="Paris 2024"><img src="images/Paris2024.png" height="25" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li id="atcolor"class="nav-item"><a class="nav-link" aria-current="page" href="athletes.html"><i class="fa fa-user-o text-primary"></i> Athletes</a></li>
+                    <li id="coachcolor"class="nav-item"><a class="nav-link" aria-current="page" href="coaches.html"><i class="fa fa-user-o text-warning"></i> Coaches</a></li>
+                    <li id="teamscolor"class="nav-item"><a class="nav-link" aria-current="page" href="teams.html"><i class="fa fa-flag-o " style="color: black;"></i> Teams</a></li>
+                    <li id="tourchcolor:"class="nav-item"><a class="nav-link" aria-current="page" href="competitions.html"><i class="fa fa-trophy text-success"></i> Competitions</a></li>
+                    <li id="modcolor"class="nav-item"><a class="nav-link" aria-current="page" href="modalities.html"><i class="fa fa-soccer-ball-o text-danger"></i> Modalities</a></li>
+                    <li class="dropdown">
+                            <button class="btn dropdown-toggle nav-link" type="button" id="dropdownMenuButton"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bars"></i> More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item"href="favoritos.html">
+                                    <i class="fa fa-heart text-danger" aria-hidden="true"></i> Favourites
+                                </a>
+                                <a class="dropdown-item" href="xxx.html">
+                                    <i class="fa fa-trophy text-warning" aria-hidden="true"></i> Medals
+                                </a>
+                                <a class="dropdown-item"  href="xxx.html">
+                                    <i class="fa fa-shopping-cart text-primary" aria-hidden="true"></i> Shop
+                                </a>
+                                <a class="dropdown-item"  href="torch.html">
+                                    <i class="fa fa-map-marker text-success" aria-hidden="true"></i> Torch Route
+                                </a>
+                            </div>
+                        </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end" id="bd-theme">
+                    <li class="nav-item"><div class="nav-link" type="button" data-bs-theme-value="light" aria-pressed="false"><i class="theme-icon fa fa-sun-o" title="Modo claro"></i></div></li>
+                    <li class="navbar-text hstack"><div class="vr"></div></li>
+                    <li class="nav-item"><div class="nav-link" type="button" data-bs-theme-value="dark" aria-pressed="false"><i class="theme-icon fa fa-moon-o" title="Modo escuro"></i></div></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid"></div>
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-block w-100" style="background: url('Images/banner1.png') center center; height: 600px; background-size: cover;" alt="First slide"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100" style="background: url('Images/banner2.png') center center; height: 600px; background-size: cover;" alt="Second slide"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100" style="background: url('Images/banner3.png') center center; height: 600px; background-size: cover;" alt="Third slide"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-block w-100" style="background: url('Images/banner4.png') center center; height: 600px; background-size: cover;" alt="Third slide"></div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-lg">
+        <h2 class="py-2 mb-2" id="gettingStartedTitle" style="text-align: center;margin: 10px;">Jogos Olímpicos de Verão de 2024</h2>
+        <hr>
+        <div class="row" style="align-items: center;margin: 5%;">
+            <div class="col-5">
+                <p> Jogos Olímpicos de Verão de 2024, oficialmente denominados Jogos da XXXIII Olimpíada e comumente conhecidos como Paris 2024, foi um evento multiesportivo internacional realizado de 26 de julho (data da cerimônia de abertura) a 11 de agosto de 2024 na França, com Paris como principal cidade anfitriã e 16 outras cidades espalhadas pela França Metropolitana, além de uma subsede no Taiti — uma ilha dentro do país ultramarino francês e da coletividade ultramarina da Polinésia Francesa.</p>
+            </div>
+            <div class="col-7 ">
+                <img src="Images/nite_grande.jpeg" alt="olympic torch" style="max-width: 100%;border-radius: 3em;">
+            </div>
+        </div>
+        <div class="row" style="align-items: center;margin: 5%;">
+            <div class="col-7 ">
+                <img src="Images/pimentas.jpeg" alt="Pimentas" style="max-width: 100%;border-radius: 3em;">
+            </div>
+            <div class="col-5 ">
+            <p> A cidade de Paris foi escolhida como sede na 131.ª Sessão do Comitê Olímpico Internacional (COI) em Lima, Peru, em 13 de setembro de 2017. Após múltiplas desistências que deixaram apenas Paris e Los Angeles na disputa, o COI aprovou um processo para defini-las como locais de realização dos Jogos de 2024 e 2028 respectivamente. Tendo anteriormente sediado os Jogos de 1900 e de 1924, Paris torna-se a segunda cidade, depois de Londres (que foi a anfitriã em 1908, 1948 e 2012), a sediar três vezes os Jogos Olímpicos de Verão. Paris 2024 também marca o centenário de Paris 1924, e estes Jogos Olímpicos são os sextos organizados pela França (três de verão e três de inverno), e os primeiros Jogos Olímpicos franceses desde os Jogos Olímpicos de Inverno de 1992 em Albertville.</p>
+            </div>
+        </div>
+        
+
+        <div class="row" style="align-items: center;margin: 5%;">
+            <div class="col-5">
+                <p> Os Jogos de 2024 contam com a estreia do breakdance como evento olímpico, e serão os últimos Jogos Olímpicos realizados durante a gestão do COI pelo presidente Thomas Bach. Os Jogos tinham a expectativa de serem os primeiros a contar com número idêntico de atletas entre homens e mulheres, mas após a lista final de inscritos os homens devem contar com uma quantidade superior de competidores. As Olimpíadas de Paris custaram cerca de 9 bilhões de euros.</p>
+            </div>
+            <div class="col-7 ">
+                <img src="Images/image_paris.jpeg" alt="Paris 2024" style="max-width: 100%;border-radius: 3em;">
+            </div>
+        </div>
+
+        <p style="font-size: small;float: right;">*Texto retirado, <b>com premissão</b>, da
+            <a href="https://pt.wikipedia.org/wiki/Jogos_Ol%C3%ADmpicos_de_Ver%C3%A3o_de_2024" target="_blank" title="Ver mais">wikipedia</a>
+        </p>
+        <br>
+        <div class="container my-xs-4" style="margin-top:10px ;">
+            <h1 class="text-start mb-3 fw-bolder">Latest news </h1>
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="Images/o_que_os_ciumes_nao_fazem.png" class="card-img-top" alt="Rebecca Cheptegei">
+                        <div class="card-body">
+                            <h5 class="card-title">Rebecca Cheptegei, maratonista de Uganda, morre após ataque com fogo</h5>
+                            <p class="card-text">A maratonista olímpica de Paris 2024, Rebecca Cheptegei, morreu após supostamente ter sido incendiada pelo namorado.</p>
+                            <a href="https://olympics.com/pt/noticias/rebecca-cheptegei-maratonista-uganda-jogos-olimpicos-paris-2024-morre-apos-ataque-fogo"
+                                class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  col-lg-4 mb-4">
+                    <div class="card" >
+                        <img src="Images/brasil_ciclismo.png" class="card-img-top" alt="Brasil no pódio">
+                        <div class="card-body">
+                            <h5 class="card-title">Brasil volta ao pódio do mundial júnior de ciclismo de pista após 42 anos</h5>
+                            <p class="card-text">Levou 42 anos, mas o Brasil voltou a colocar um atleta no pódio do Mundial Júnior de Ciclismo de Pista. </p>
+                            <a href="https://olympics.com/pt/noticias/brasil-podio-mundial-junior-ciclismo-pista-lucca-marques"
+                                class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card" >
+                        <img src="Images/paralimpicos.png" class="card-img-top" alt="Instalações">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris 2024: Instalações olímpicas usadas para jogos paralímpicos</h5>
+                            <p class="card-text">Após os Jogos Olímpicos Paris 2024, os Jogos Paralímpicos serão realizados de 28 de agosto a 8 de setembro. </p>
+                            <a href="https://olympics.com/pt/noticias/paris-2024-instalacoes-olimpicas-ganham-segunda-vida-jogos-paralimpicos"
+                                class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card" >
+                        <img src="Images/salto.png" class="card-img-top" alt="Salto com vara">
+                        <div class="card-body">
+                            <h5 class="card-title">Bicampeão Olímpico do salto com vara, Armand Duplantis vence pela Diamond League em Lausanne</h5>
+                            <p class="card-text">Menos de duas semanas após obter o bicampeonato Olímpico no salto com vara em Paris 2024, o sueco Armand Duplantis voltou a ocupar o lugar mais alto do pódio (Suíça).</p>
+                            <a href="https://olympics.com/pt/noticias/apos-bi-olimpico-armand-duplantis-vence-salto-vara-diamond-league-lausanne"
+                                class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card" >
+                        <img src="Images/bala.png" class="card-img-top" alt="Gustavo Bala">
+                        <div class="card-body">
+                            <h5 class="card-title">Gustavo Bala Loka sofre fratura e passa por cirurgia após Paris 2024</h5>
+                            <p class="card-text">Se o ciclo até os Jogos Olímpicos LA 2028 para os atletas começa imediatamente após a Cerimônia de Encerramento de Paris 2024, o brasileiro Gustavo Bala Loka, do BMX Freestyle, já inicia a sua jornada em recuperação.</p>
+                            <a href="https://olympics.com/pt/noticias/gustavo-bala-loka-fratura-treino-bmx-paris-2024-cirurgia"
+                                class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <div class="card" >
+                        <img src="Images/champs_pinpong_grande.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Masters 1000 de Montreal 2024: horário e onde assistir à final</h5>
+                            <p class="card-text">Andrey Rublev e Alexei Popyrin estão na decisão do Masters 1000 de Montreal, no Canadá. A final acontece nesta segunda-feira (12), às 20h30. Este será o terceiro confronto entre eles. Nos dois duelos anteriores, uma vitória para cada.</p>
+                            <a href="https://olympics.com/pt/noticias/masters-1000-montreal-2024-horario-assistir-final-andrey-rublev-alexei-popyrin"
+                                class="btn btn-primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar fixed-bottom bg-body-tertiary border-top">
+        <div class="container small">
+            <div class="navbar-text">&copy;  Introdução as Tecnologias Web - 2024/25</div>
+            <div class="navbar-text">Made with <i class="fa fa-heart-o text-danger"></i> for JSP by Hugo e Samuel.</div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.ua.pt" class="nav-link">Universidade de Aveiro</a></div>
+            </div>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="theme.js"></script>
+</body>
+</html>
