@@ -1,0 +1,197 @@
+.card-borderBlue {
+        z-index: 0;
+        position: relative;
+        padding: 1rem;
+        width: 200px;
+        height: 250px;
+        box-sizing: border-box;
+        background: transparent;
+        backdrop-filter: blur(40px);
+        border-radius: 0px 2rem;
+        background-image: radial-gradient(#00008b8a, #00008bcc), /* Azul escuro com transparência */
+                          linear-gradient(35deg, #1e90ff 62%, #87ceeb 100%); /* Azul claro */
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 1px 1px 3rem #1e90ff; /* Sombra azul */
+
+  }
+.card-borderBlack {
+    z-index: 0;
+    position: relative;
+    padding: 1rem;
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 0px 2rem;
+    background-image: radial-gradient(#0000008a, #2f2f2fcc), /* Preto translúcido com cinza escuro */
+                      linear-gradient(35deg, #434343 62%, #696969 100%); /* Gradiente cinza escuro */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 1px 1px 3rem #696969; /* Sombra cinza */
+  }
+.card-borderRed {
+    z-index: 0;
+    position: relative;
+    padding: 1rem;
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 0px 2rem;
+    background-image: radial-gradient(#8b00008a, #8b0000cc), /* Vermelho escuro com transparência */
+                      linear-gradient(35deg, #ff4500 62%, #ff7f7f 100%); /* Vermelho laranja para rosa claro */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 1px 1px 3rem #ff4500; /* Sombra laranja avermelhada */
+  }
+.card-borderY {
+    z-index: 0;
+    position: relative;
+    padding: 1rem;
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 0px 2rem;
+    background-image: radial-gradient(#8b80008a, #8b8000cc), /* Amarelo escuro com transparência */
+                      linear-gradient(35deg, #ffd700 62%, #fffacd 100%); /* Gradiente dourado a amarelo pálido */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 1px 1px 3rem #ffd700; /* Sombra dourada */
+  }
+.card-borderG {
+    z-index: 0;
+    position: relative;
+    padding: 1rem;
+    width: 200px;
+    height: 250px;
+    box-sizing: border-box;
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 0px 2rem;
+    background-image: radial-gradient(#2121218a, #212121cc), linear-gradient(35deg,#124926 62%,#57ff94 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 1px 1px 3rem #57ff95;
+  }
+  
+  .card-bgBlue {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0px 0.8rem;
+    background: linear-gradient(346.80deg, #1e90ff 30%, #0000a5 30%, rgba(0, 0, 255, 0) 30%, rgba(0, 0, 255, 0) 32%, #1e90ff 32%, #1e90ff 35%, transparent 35%);
+  }
+  .card-bgBlack {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0px 0.8rem;
+    background: linear-gradient(346.80deg, #434343 30%, #2f2f2f 30%, rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0) 32%, #434343 32%, #434343 35%, transparent 35%);
+  }
+  .card-bgRed {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0px 0.8rem;
+    background: linear-gradient(346.80deg, #ff4500 30%, #a50000 30%, rgba(255, 0, 0, 0) 30%, rgba(255, 0, 0, 0) 32%, #ff4500 32%, #ff4500, transparent 35%);
+  }
+  .card-bgY {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0px 0.8rem;
+    background: linear-gradient(346.80deg, #ffd700 30%, #ffc400 30%, rgba(255, 215, 0, 0) 30%, rgba(255, 215, 0, 0) 32%, #ffd700 32%, #ffd700 35%, transparent 35%);
+  }
+  .card-bgG {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0px 0.8rem;
+    background: linear-gradient(346.80deg, #124926 30%, #165c30 30%, rgba(255, 70, 84, 0) 30%, rgba(255, 70, 84, 0) 32%, #124926 32%, #124926  35%, transparent 35%);
+  }
+  strong {
+    text-transform: uppercase;
+    font-family: 'Open Sans Pro', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    align-items: center;
+    letter-spacing: 0.4rem;
+    margin-top: 1.4rem; /* Adiciona espaçamento acima */
+    display: block; /* Garante o comportamento de bloco */
+    text-align: center; /* Mantém centralizado */
+}
+
+  .marquee {
+    top: 0;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    --offset: 2rem;
+    --move-initial: calc(-20% + var(--offset));
+    --move-final: calc(-85% + var(--offset));
+    border-radius: 0px 1rem;
+    filter: opacity(0.3);
+  }
+  
+  .marquee__inner {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: slide 60s linear infinite;
+    border-radius: 0px 1rem;
+  }
+  
+  .marquee__inner {
+    animation-play-state: running;
+  }
+  
+  #blur-area {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    /* border: 1px solid rgb(12, 255, 65); */
+    border-radius: 0 1rem;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(90deg, transparent  0%, #00000044 100%);
+  }
+  .mist-container {
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    overflow: hidden;
+    filter: blur(1rem);
+    top: 60%;
+    left: 0;
+  }
+  
+  svg {
+    position: absolute;
+    top: 0%;
+    width: 18rem;
+    height: 100%;
+    z-index: -2;
+  }
+  
+  .clickable-div:hover {
+    transform: scale(1.05); 
+  }
+ 

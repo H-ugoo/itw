@@ -11,9 +11,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="Images/icon.png">
     <style>
         .bannerTop {
-            background-image: url('Images/banner1.png')
+            background-image: url('images/banner1.png'); 
         }
     </style>
 </head>
@@ -27,17 +28,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li id="atcolor"class="nav-item"><a class="nav-link" aria-current="page" href="athletes.html"><i class="fa fa-user-o text-primary"></i> Athletes</a></li>
-                    <li id="coachcolor"class="nav-item"><a class="nav-link" aria-current="page" href="xxx.html"><i class="fa fa-user-o text-warning"></i> Coaches</a></li>
-                    <li id="teamscolor"class="nav-item"><a class="nav-link" aria-current="page" href="xxx.html"><i class="fa fa-flag-o " style="color: black;"></i> Teams</a></li>
-                    <li id="tourchcolor:"class="nav-item active"><a class="nav-link" aria-current="page" href="torch.html"><i class="fa fa-map-marker text-success"></i> Torch Route</a></li>
-                    <li id="modcolor"class="nav-item"><a class="nav-link" aria-current="page" href="xxx.html"><i class="fa fa-soccer-ball-o text-danger"></i> Modalities</a></li>
+                    <li id="coachcolor"class="nav-item"><a class="nav-link" aria-current="page" href="coaches.html"><i class="fa fa-user-o text-warning"></i> Coaches</a></li>
+                    <li id="teamscolor"class="nav-item"><a class="nav-link" aria-current="page" href="teams.html"><i class="fa fa-flag-o " style="color: black;"></i> Teams</a></li>
+                    <li id="tourchcolor:"class="nav-item"><a class="nav-link" aria-current="page" href="competitions.html"><i class="fa fa-trophy text-success"></i> Competitions</a></li>
+                    <li id="modcolor"class="nav-item"><a class="nav-link" aria-current="page" href="modalities.html"><i class="fa fa-soccer-ball-o text-danger"></i> Modalities</a></li>
                     <li class="dropdown">
                             <button class="btn dropdown-toggle nav-link" type="button" id="dropdownMenuButton"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fa fa-bars"></i> More
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item"href="xxx.html">
+                                <a class="dropdown-item"href="favoritos.html">
                                     <i class="fa fa-heart text-danger" aria-hidden="true"></i> Favourites
                                 </a>
                                 <a class="dropdown-item" href="xxx.html">
@@ -45,6 +46,9 @@
                                 </a>
                                 <a class="dropdown-item"  href="xxx.html">
                                     <i class="fa fa-shopping-cart text-primary" aria-hidden="true"></i> Shop
+                                </a>
+                                <a class="dropdown-item"  href="torch.html">
+                                    <i class="fa fa-map-marker text-success" aria-hidden="true"></i> Torch Route
                                 </a>
                             </div>
                         </li>
@@ -57,12 +61,12 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid bannerTop"></div>
     <!-- Work Area-->
     <main class="container-lg">
         <div class="border-bottom py-2 mb-2">
             <h2 data-bind="text:displayName"></h2>
         </div>
+        <div class="container bannerTop" ></div>
         <table class="table table-striped table-sm small">
             <thead class="table-secondary">
                 <tr>
@@ -72,6 +76,7 @@
                     <th scope="col">City</th>
                     <th scope="col">URL</th>
                     <th scope="col">Stage num</th>
+                    <th scope="col">Map</th>
                 </tr>
             </thead>
             <tbody data-bind="foreach: records">
@@ -82,6 +87,7 @@
                     <td class="align-middle" data-bind="text:City"></td>
                     <td class="align-middle"><a class="nav-link" data-bind="text:Title, attr: { href: Url }" title="Show Details"></a></td>
                     <td class="align-middle" data-bind="text:Stage_number"></td>
+                    <td class="align-middle"><a class="nav-link" data-bind="attr: { href:'./torchMap.html?long=' + Lon +'lat='+Lat}"><i class="fa fa-map" title="Show details"></i> See</a></td>
                 </tr>
             </tbody>
         </table>
@@ -90,7 +96,7 @@
     <nav class="navbar fixed-bottom bg-body-tertiary border-top">
         <div class="container small">
             <div class="navbar-text">&copy;  Introdução as Tecnologias Web - 2024/25</div>
-            <div class="navbar-text">Made with <i class="fa fa-heart-o text-danger"></i> for U by Hugo e Samuel.</div>
+            <div class="navbar-text">Made with <i class="fa fa-heart-o text-danger"></i> for JSP by Hugo e Samuel.</div>
             <div class="navbar-nav">
                 <div class="nav-item text-end"><a href="https://www.ua.pt" class="nav-link">Universidade de Aveiro</a></div>
             </div>

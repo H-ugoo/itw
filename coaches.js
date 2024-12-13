@@ -1,12 +1,12 @@
 ﻿var vm = function () {
     console.log('ViewModel initiated...');
     var self = this;
-    self.baseUri = ko.observable('http://192.168.160.58/Paris2024/API/athletes');
-    self.displayName = 'Paris2024 Athletes List';
+    self.baseUri = ko.observable('http://192.168.160.58/Paris2024/API/coaches');
+    self.displayName = 'Paris2024 Coaches List';
     self.error = ko.observable('');
     self.passingMessage = ko.observable('');
-    self.athletes = ko.observableArray([]);
-    self.favourites = ko.observableArray([]);
+    self.Coaches = ko.observableArray([]);
+    self.favourites_c = ko.observableArray([]);  
     self.currentPage = ko.observable(1);
     self.pagesize = ko.observable(20);
     self.totalRecords = ko.observable(50);
@@ -25,6 +25,7 @@
         return Math.min(self.currentPage() * self.pagesize(), self.totalRecords());
     }, self);
     self.totalPages = ko.observable(0);
+
     self.pageArray = function () {
         var list = [];
         var size = Math.min(self.totalPages(), 9);
@@ -43,27 +44,22 @@
 
     //--- Page Events
     self.activate = function (id) {
-        console.log('CALL: getAthletes...');
+        console.log('CALL: getCoaches...');
         var composedUri = self.baseUri() + "?page=" + id + "&pageSize=" + self.pagesize();
         ajaxHelper(composedUri, 'GET').done(function (data) {
             console.log(data);
             hideLoading();
-            data.Athletes.forEach(function (athlete) {
-                if (athlete.BirthDate) {
-                    athlete.BirthDate = athlete.BirthDate.split('T')[0];
-                }
-                // Marca se o atleta está nos favoritos
-                athlete.isFavorite = ko.computed(function () {
-                    return self.favourites.indexOf(athlete.Id) !== -1;
-                });
+            self.loadFavorites(); 
+            data.Coaches.forEach(function (coache) {
+                coache.isFavorite = ko.observable(self.favourites_c.indexOf(coache.Id) !== -1);
             });
-            self.athletes(data.Athletes);
+            self.Coaches(data.Coaches);
             self.currentPage(data.CurrentPage);
             self.hasNext(data.HasNext);
             self.hasPrevious(data.HasPrevious);
-            self.pagesize(data.PageSize)
+            self.pagesize(data.PageSize);
             self.totalPages(data.TotalPages);
-            self.totalRecords(data.TotalAhletes);
+            self.totalRecords(data.TotalCoaches);
         });
     };
 
@@ -95,33 +91,35 @@
             keyboard: false
         });
     }
+
     function hideLoading() {
         $('#myModal').on('shown.bs.modal', function (e) {
             $("#myModal").modal('hide');
         })
     }
 
-    // Favoritos
     self.loadFavorites = function () {
-        let storedFavs = localStorage.getItem('favorites');
+        let storedFavs = localStorage.getItem('favorites_c');
         if (storedFavs) {
-            self.favourites(JSON.parse(storedFavs));
+            self.favourites_c(JSON.parse(storedFavs));
         }
     };
 
     self.saveFavorites = function () {
-        localStorage.setItem('favorites', JSON.stringify(self.favourites()));
+        localStorage.setItem('favorites_c', JSON.stringify(self.favourites_c()));
     };
 
-    self.toggleFavorite = function (athlete) {
-        if (self.favourites.indexOf(athlete.Id) === -1) {
-            self.favourites.push(athlete.Id);
-            alert(athlete.Name + " foi adicionado aos favoritos!");
+    self.toggleFavorite = function (coache) {
+        if (self.favourites_c.indexOf(coache.Id) === -1) {
+            self.favourites_c.push(coache.Id); 
+            coache.isFavorite(true);
+            alert(coache.Name + " foi adicionado aos favoritos!");
         } else {
-            self.favourites.remove(athlete.Id);
-            alert(athlete.Name + " foi removido dos favoritos!");
+            self.favourites_c.remove(coache.Id);
+            coache.isFavorite(false); 
+            alert(coache.Name + " foi removido dos favoritos!");
         }
-        self.saveFavorites();
+        self.saveFavorites(); 
     };
 
     function getUrlParameter(sParam) {
@@ -139,9 +137,8 @@
         }
     };
 
-    //--- start ....
+    //--- start .... 
     showLoading();
-    self.loadFavorites(); 
     var pg = getUrlParameter('page');
     console.log(pg);
     if (pg == undefined)

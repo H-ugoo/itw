@@ -1,0 +1,28 @@
+/* Estilo básico dos botões */
+.btn-olympic {
+    background-color: transparent;
+    color: #fff;
+    border: none;               /* Remove a borda dos botões */
+    border-radius: 8px;         /* Bordas arredondadas */
+    padding: 20px 30px;         /* Tamanho confortável para os botões */
+    font-size: 1.2rem;          /* Tamanho de fonte agradável */
+    font-weight: bold;          /* Texto em negrito */
+    text-align: center;         /* Centraliza o texto dentro do botão */
+    transition: all 0.3s ease;  /* Efeito de transição suave */
+    width: 200px;               /* Largura fixa para todos os botões */
+    margin: 10px;               /* Garante que os botões tenham espaçamento entre eles */
+}
+/* Efeito de animação ao passar o mouse (hover) */
+.btn-olympic:hover {
+    transform: translateY(-5px);  /* Efeito de levantar */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);  /* Sombra ao passar o mouse */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Animação suave */
+}
+
+/* Efeito de animação no foco (quando o botão é clicado) */
+.btn-olympic:focus {
+    outline: none; /* Remove o contorno padrão do foco */
+    transform: scale(1.05); /* Aumenta o botão ligeiramente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Aumenta a sombra no foco */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Animação suave */
+}
