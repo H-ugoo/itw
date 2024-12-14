@@ -38,10 +38,10 @@
                                 <a class="dropdown-item"href="favoritos.html">
                                     <i class="fa fa-heart text-danger" aria-hidden="true"></i> Favourites
                                 </a>
-                                <a class="dropdown-item" href="xxx.html">
+                                <a class="dropdown-item" href="medals.html">
                                     <i class="fa fa-trophy text-warning" aria-hidden="true"></i> Medals
                                 </a>
-                                <a class="dropdown-item"  href="xxx.html">
+                                <a class="dropdown-item"  href="shop.html">
                                     <i class="fa fa-shopping-cart text-primary" aria-hidden="true"></i> Shop
                                 </a>
                                 <a class="dropdown-item"  href="torch.html">
@@ -58,7 +58,10 @@
             </div>
         </div>
     </nav>
-    <div class="container" style="padding:70px;">
+    <div class="container">
+      <div class="row">
+        <strong id="text-border" style="font-size: 1.5rem; margin-top: 10px;">Favourites</strong>
+      </div>
         <div class="row " style="justify-content: center;align-content: center;" >
             <div class="card-borderBlue clickable-div" style="margin: 30px;" onclick="redirectToPage('athletesFav.html')">
                 <div class="card-bgBlue"> 
@@ -135,7 +138,7 @@
     </nav>
     <script>
         function redirectToPage(url) {
-          window.location.href = url; // Redireciona para a página especificada
+          window.location.href = url; 
         }
       </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

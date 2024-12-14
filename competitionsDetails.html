@@ -35,10 +35,10 @@
                                 <a class="dropdown-item"href="favoritos.html">
                                     <i class="fa fa-heart text-danger" aria-hidden="true"></i> Favourites
                                 </a>
-                                <a class="dropdown-item" href="xxx.html">
+                                <a class="dropdown-item" href="medals.html">
                                     <i class="fa fa-trophy text-warning" aria-hidden="true"></i> Medals
                                 </a>
-                                <a class="dropdown-item"  href="xxx.html">
+                                <a class="dropdown-item"  href="shop.html">
                                     <i class="fa fa-shopping-cart text-primary" aria-hidden="true"></i> Shop
                                 </a>
                                 <a class="dropdown-item"  href="torch.html">
@@ -58,13 +58,13 @@
 <!-- Work Area-->
 <div class="container mt-4 border rounded" style="padding:70px">
     <div class="row justify-content-center">
-        <!-- Competitions Info -->
+       
         <div class="col-12 col-lg-7">
             <div class="py-2 border-bottom mb-3">
                 <h2 data-bind="text: Name() + ' - ' + Tag()"></h2>
             </div>
             <div class="row justify-content-center">
-                <!-- Competition Image -->
+               
                 <div class="col-12 col-lg-5 mt-5 ms-lg-5 " style="width: 350px; height:350px;">
                     <!--ko if: Photo-->
                     <a data-bind="attr:{href: Photo}">
@@ -76,7 +76,6 @@
                     <!--/ko-->
                 </div>
                 
-                <!-- Competition Details -->
                 <div class="row border-bottom mx-0 my-1">
                     <div class="col-5">Sport ID</div>
                     <div class="col-7" data-bind="text: SportId"></div>
@@ -90,7 +89,6 @@
                     <div class="col-7" data-bind="text: SportInfo"></div>
                 </div>
                 
-                <!-- Athletes -->
                 <h2 class="py-2">Athletes</h2>
                 <div data-bind="ifnot: Athletes().length == 0">
                     <ul data-bind="foreach: Athletes">
@@ -99,13 +97,13 @@
                         </li>
                     </ul>
                 </div>
-                <!-- Error Message -->
+               
                 <p data-bind="visible: error, text: error" class="text-danger"></p>
             </div>
         </div>
     </div>
 
-    <!-- Back & Top Buttons -->
+   
     <div class="text-center mt-5">
         <a href="competitions.html" class="btn btn-primary"><i class="fa fa-list"></i> Back to List</a>
         <a href="#" class="btn btn-primary"><i class="fa fa-arrow-up"></i> Top</a>

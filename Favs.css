@@ -8,11 +8,11 @@
         background: transparent;
         backdrop-filter: blur(40px);
         border-radius: 0px 2rem;
-        background-image: radial-gradient(#00008b8a, #00008bcc), /* Azul escuro com transparência */
-                          linear-gradient(35deg, #1e90ff 62%, #87ceeb 100%); /* Azul claro */
+        background-image: radial-gradient(#00008b8a, #00008bcc), 
+                          linear-gradient(35deg, #1e90ff 62%, #87ceeb 100%);
         background-origin: border-box;
         background-clip: content-box, border-box;
-        box-shadow: 1px 1px 3rem #1e90ff; /* Sombra azul */
+        box-shadow: 1px 1px 3rem #1e90ff; 
 
   }
 .card-borderBlack {
@@ -25,11 +25,11 @@
     background: transparent;
     backdrop-filter: blur(40px);
     border-radius: 0px 2rem;
-    background-image: radial-gradient(#0000008a, #2f2f2fcc), /* Preto translúcido com cinza escuro */
-                      linear-gradient(35deg, #434343 62%, #696969 100%); /* Gradiente cinza escuro */
+    background-image: radial-gradient(#0000008a, #2f2f2fcc), 
+                      linear-gradient(35deg, #434343 62%, #696969 100%); 
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 1px 1px 3rem #696969; /* Sombra cinza */
+    box-shadow: 1px 1px 3rem #696969; 
   }
 .card-borderRed {
     z-index: 0;
@@ -41,11 +41,11 @@
     background: transparent;
     backdrop-filter: blur(40px);
     border-radius: 0px 2rem;
-    background-image: radial-gradient(#8b00008a, #8b0000cc), /* Vermelho escuro com transparência */
-                      linear-gradient(35deg, #ff4500 62%, #ff7f7f 100%); /* Vermelho laranja para rosa claro */
+    background-image: radial-gradient(#8b00008a, #8b0000cc), 
+                      linear-gradient(35deg, #ff4500 62%, #ff7f7f 100%); 
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 1px 1px 3rem #ff4500; /* Sombra laranja avermelhada */
+    box-shadow: 1px 1px 3rem #ff4500; 
   }
 .card-borderY {
     z-index: 0;
@@ -57,11 +57,11 @@
     background: transparent;
     backdrop-filter: blur(40px);
     border-radius: 0px 2rem;
-    background-image: radial-gradient(#8b80008a, #8b8000cc), /* Amarelo escuro com transparência */
-                      linear-gradient(35deg, #ffd700 62%, #fffacd 100%); /* Gradiente dourado a amarelo pálido */
+    background-image: radial-gradient(#8b80008a, #8b8000cc),
+                      linear-gradient(35deg, #ffd700 62%, #fffacd 100%); 
     background-origin: border-box;
     background-clip: content-box, border-box;
-    box-shadow: 1px 1px 3rem #ffd700; /* Sombra dourada */
+    box-shadow: 1px 1px 3rem #ffd700; 
   }
 .card-borderG {
     z-index: 0;
@@ -131,9 +131,9 @@
     font-weight: 900;
     align-items: center;
     letter-spacing: 0.4rem;
-    margin-top: 1.4rem; /* Adiciona espaçamento acima */
-    display: block; /* Garante o comportamento de bloco */
-    text-align: center; /* Mantém centralizado */
+    margin-top: 1.4rem; 
+    display: block; 
+    text-align: center; 
 }
 
   .marquee {
@@ -168,7 +168,6 @@
     position: absolute;
     z-index: -1;
     inset: 0;
-    /* border: 1px solid rgb(12, 255, 65); */
     border-radius: 0 1rem;
     backdrop-filter: blur(3px);
     background: linear-gradient(90deg, transparent  0%, #00000044 100%);
